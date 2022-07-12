@@ -53,6 +53,12 @@ let res = esoTools.AES_Decode(encodeStr.base64, "x;j/6olSp})&{ZJD", {
 });
 print(res);
 ```
+### params规则
+在设置moreKeys(更多键)后有效
+params.pageIndex    等价于page 当前页码
+params.tabIndex     分组索引
+params.filters      筛选器
+
 ### moreKeys(更多键)
 用于一些筛选配置,必须提供JSON数据 格式为:object{isWrap<bool>,list[object{title,requestFilters[object{key, item[object{title,value}]}]}]}
 ```
@@ -76,6 +82,8 @@ object{
     ]
 }
 ```
-
-
+```
+把这个JSON数据复制到JSON查看器里观察
+{"list":[{"title":"电视剧","requestFilters":[{"items":[{"title":"全部","value":"/tv/index.html"},{"title":"国产剧","value":"/guochan/index.html"},{"title":"港台剧","value":"/tangtai/index.html"},{"title":"欧美剧","value":"/oumei/index.html"},{"title":"日韩剧","value":"/rihan/index.html"}],"key":"type","value":"/tv/index.html"}]},{"title":"电影","requestFilters":[{"items":[{"title":"全部","value":"/dy/index.html"},{"title":"动作片","value":"/dongzuo/index.html"},{"title":"爱情片","value":"/aiqing/index.html"},{"title":"科幻片","value":"/kehuan/index.html"},{"title":"恐怖片","value":"/kongbu/index.html"},{"title":"喜剧片","value":"/xiju/index.html"},{"title":"剧情片","value":"/juqing/index.html"},{"title":"在线直播","value":"/zaixianzhibo/index.html"}],"key":"type","value":"/dy/index.html"}]},{"title":"综艺","requestFilters":[{"items":[{"title":"全部","value":"/zy/index.html"}],"key":"type","value":"/zy/index.html"}]},{"title":"动漫","requestFilters":[{"items":[{"title":"全部","value":"/dm/index.html"}],"key":"type","value":"/dm/index.html"}]}]}
+```
 
