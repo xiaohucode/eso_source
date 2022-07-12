@@ -55,8 +55,27 @@ print(res);
 ```
 ### moreKeys(更多键)
 用于一些筛选配置,必须提供JSON数据 格式为:object{isWrap<bool>,list[object{title,requestFilters[object{key, item[object{title,value}]}]}]}
-
-
+```
+object{
+    isWrap,                         // bool型 筛选器是否为瀑布流布局,默认为true,false为横向滑动布局
+    list[                           // list数组 多类型分组数组
+        object{                     // 分组{n}
+            title,                  // 分组标题名
+            requestFilters[         // 筛选器数组,
+                object{             // 筛选器{n}
+                    key,            // key标识 用于在js里读取value  如此处key为'rank' js获取应为params.filters.rank
+                    items[          // 项目数组 
+                        object{     // 项目{n}
+                            title,  // 筛选标签名字
+                            value   // 数值
+                        }
+                    ] 
+                }
+            ]
+        }
+    ]
+}
+```
 
 
 
