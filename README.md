@@ -4,6 +4,7 @@ app作者开源地址:https://github.com/mabDc/eso
 
 ### esoTools函数
 esoTools函数:
+
 esoTools.encode(type, body) //编码数据 type可以是'base64' 'gbk' 'utf8' 'md5'
 
 esoTools.decode(type, body) //解码数据 type可以是'base64' 'gbk' 'utf8'
