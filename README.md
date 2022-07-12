@@ -37,8 +37,6 @@ esoTools.AES例:
 //     ofb64,
 //     sic,
 // };
-
-
 let encodeStr = esoTools.AES_Encode("你好", "x;j/6olSp})&{ZJD", {
     mode: AESMode.cbc,
     padding: 'PKCS7',
@@ -54,11 +52,10 @@ let res = esoTools.AES_Decode(encodeStr.base64, "x;j/6olSp})&{ZJD", {
     iv: "znbV%$JN5olCpt<c"
 });
 print(res);
-
-
-
-
 ```
+### moreKeys(更多键)
+用于一些筛选配置,必须提供JSON数据 格式为:object{isWrap<bool>,list[object{title,requestFilters[object{key, item[object{title,value}]}]}]}
+
 
 
 
