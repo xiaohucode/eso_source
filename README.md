@@ -1,9 +1,15 @@
+# 亦搜IOS版
+
+
 # eso_source
 app作者开源地址:https://github.com/mabDc/eso
 
 
 ### esoTools函数
 esoTools函数:
+
+
+- 下列是异步函数,需要使用 await 或 then
 
 esoTools.encode(type, body) //编码数据 type可以是'base64' 'gbk' 'utf8' 'md5'
 
@@ -21,6 +27,8 @@ esoTools.AES_EncodeECB (string, inkey) //ECB模式加密返回值同AES_Encode
 
 esoTools.AES_DecodeECB (string, inkey) //ECB模式解密
 
+- 下列函数不必使用await 或 then
+
 esoTools.RSA_encrypt (string, key) //RSA公钥加密
 
 esoTools.RSA_decrypt (string, key) //RSA私钥解密
@@ -28,6 +36,25 @@ esoTools.RSA_decrypt (string, key) //RSA私钥解密
 esoTools.RSA_encryptWithPrivate (string, key) //RSA私钥加密
 
 esoTools.RSA_decryptWithPublic (string, key) //RSA公钥解密
+
+esoTools.md5Encode = (str)
+
+esoTools.base64Encode = (str)
+
+esoTools.base64Decode = (str)
+
+esoTools.sha1Encode = (str)
+
+esoTools.sha224Encode = (str)
+
+esoTools.sha256Encode = (str)
+
+esoTools.sha348Encode = (str)
+
+esoTools.sha512Encode = (str)
+
+esoTools.ripemd160Encode = (str)
+
 
 esoTools.AES例:
 ```
