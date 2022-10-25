@@ -37,23 +37,23 @@ esoTools.RSA_encryptWithPrivate (string, key) //RSA私钥加密
 
 esoTools.RSA_decryptWithPublic (string, key) //RSA公钥解密
 
-esoTools.md5Encode = (str)
+esoTools.md5Encode (str)
 
-esoTools.base64Encode = (str)
+esoTools.base64Encode (str)
 
-esoTools.base64Decode = (str)
+esoTools.base64Decode (str)
 
-esoTools.sha1Encode = (str)
+esoTools.sha1Encode (str)
 
-esoTools.sha224Encode = (str)
+esoTools.sha224Encode (str)
 
-esoTools.sha256Encode = (str)
+esoTools.sha256Encode (str)
 
-esoTools.sha348Encode = (str)
+esoTools.sha348Encode (str)
 
-esoTools.sha512Encode = (str)
+esoTools.sha512Encode (str)
 
-esoTools.ripemd160Encode = (str)
+esoTools.ripemd160Encode (str)
 
 
 esoTools.AES例:
