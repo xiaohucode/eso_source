@@ -1,5 +1,6 @@
 # 亦搜IOS版
 
+规则导入链接:https://raw.githubusercontent.com/xiaohucode/eso_source/main/%E6%95%B4%E5%90%88%E8%A7%84%E5%88%99/EsoSource.json
 
 # eso_source
 app作者开源地址:https://github.com/mabDc/eso
