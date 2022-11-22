@@ -6,10 +6,8 @@ app作者开源地址:https://github.com/mabDc/eso
 
 
 ### esoTools函数
-esoTools函数:
 
-
-- 下列是异步函数,需要使用 await 或 then
+- 下列是异步函数,需要使用 await 或 then 获取返回值
 
 esoTools.encode(type, body) //编码数据 type可以是'base64' 'gbk' 'utf8' 'md5'
 
