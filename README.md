@@ -96,6 +96,8 @@ params.filters      筛选器
 
 
 ### webview参数
+```
+/*
 新的webview参数:
 webview仅支持GET,POST请求,不支持PUT其他请求
 
@@ -117,7 +119,7 @@ ios\macos平台:
 Windows平台
 暂时不支持,等我修改webview插件
 */
-
+```
 
 
 ### moreKeys(更多键)
