@@ -93,6 +93,33 @@ params.tabIndex     分组索引
 
 params.filters      筛选器
 
+
+
+### webview参数
+新的webview参数:
+webview仅支持GET,POST请求,不支持PUT其他请求
+
+webview：非空表示开启webview请求完整网页
+sourceRegex：匹配正则表达式,嗅探资源url
+webviewJs：webview完成后执行的js,结果就是响应数据
+webviewJsDelay：webview完成后延时执行js,默认1秒
+
+*/
+let resp = httpByte({url: "https://www.baidu.com/", webview: true,sourceRegex:'(?:\.m3u8|\.mp4|api\/source)'});
+print(resp.body);
+/* 
+webview目前问题：
+Android平台：
+开webviewPOST请求有点问题
+请求响应后没有添加响应头
+ios\macos平台:
+无
+Windows平台
+暂时不支持,等我修改webview插件
+*/
+
+
+
 ### moreKeys(更多键)
 用于一些筛选配置,必须提供JSON数据 格式为:object{isWrap<bool>,list[object{title,requestFilters[object{key, item[object{title,value}]}]}]}
 ```
