@@ -2,59 +2,60 @@
 
 安装包获取:https://github.com/xiaohucode/eso_source/releases
 
-规则导入链接:https://raw.githubusercontent.com/xiaohucode/eso_source/main/%E6%95%B4%E5%90%88%E8%A7%84%E5%88%99/EsoSource.json
+规则导入链接:https://raw.githubusercontent.com/xiaohucode/eso_source/main/%E6%95%B4%E5%90%88%E8%A7%84%E5%88%99/EsoSource.es
 
 # eso_source
 app作者开源地址:https://github.com/mabDc/eso
 
+### app规则内置CryptoJS
 
 ### esoTools函数
 
 - 下列是异步函数,需要使用 await 或 then 获取返回值
 
-esoTools.encode(type, body) //编码数据 type可以是'base64' 'gbk' 'utf8' 'md5'
+    - esoTools.encode(type, body) //编码数据 type可以是'base64' 'gbk' 'utf8' 'md5'
 
-esoTools.decode(type, body) //解码数据 type可以是'base64' 'gbk' 'utf8'
+    - esoTools.decode(type, body) //解码数据 type可以是'base64' 'gbk' 'utf8'
 
-esoTools.AES_Encode (string, inkey, opt) //返回字典{'base16':x,'base64':x,'bytes':x}
+    - esoTools.AES_Encode (string, inkey, opt) //返回字典{'base16':x,'base64':x,'bytes':x}
 
-esoTools.AES_Decode (string, inkey, opt) //string需提供base64格式数据 返回解密文本数据
+    - esoTools.AES_Decode (string, inkey, opt) //string需提供base64格式数据 返回解密文本数据
 
-esoTools.AES_EncodeCBC (string, inkey, iniv) // 返回值同AES_Encode,默认为PKCS7模式
+    - esoTools.AES_EncodeCBC (string, inkey, iniv) // 返回值同AES_Encode,默认为PKCS7模式
 
-esoTools.AES_DecodeCBC (string, inkey, iniv) // 同AES_Decode,默认为PKCS7模式
+    - esoTools.AES_DecodeCBC (string, inkey, iniv) // 同AES_Decode,默认为PKCS7模式
 
-esoTools.AES_EncodeECB (string, inkey) //ECB模式加密返回值同AES_Encode
+    - esoTools.AES_EncodeECB (string, inkey) //ECB模式加密返回值同AES_Encode
 
-esoTools.AES_DecodeECB (string, inkey) //ECB模式解密
+    - esoTools.AES_DecodeECB (string, inkey) //ECB模式解密
 
 - 下列函数不必使用await 或 then
 
-esoTools.RSA_encrypt (string, key) //RSA公钥加密
+    - esoTools.RSA_encrypt (string, key) //RSA公钥加密
 
-esoTools.RSA_decrypt (string, key) //RSA私钥解密
+    - esoTools.RSA_decrypt (string, key) //RSA私钥解密
 
-esoTools.RSA_encryptWithPrivate (string, key) //RSA私钥加密
+    - esoTools.RSA_encryptWithPrivate (string, key) //RSA私钥加密
 
-esoTools.RSA_decryptWithPublic (string, key) //RSA公钥解密
+    - esoTools.RSA_decryptWithPublic (string, key) //RSA公钥解密
 
-esoTools.md5Encode (str)
+    - esoTools.md5Encode (str)
 
-esoTools.base64Encode (str)
+    - esoTools.base64Encode (str)
 
-esoTools.base64Decode (str)
+    - esoTools.base64Decode (str)
 
-esoTools.sha1Encode (str)
+    - esoTools.sha1Encode (str)
 
-esoTools.sha224Encode (str)
+    - esoTools.sha224Encode (str)
 
-esoTools.sha256Encode (str)
+    - esoTools.sha256Encode (str)
 
-esoTools.sha348Encode (str)
+    - esoTools.sha348Encode (str)
 
-esoTools.sha512Encode (str)
+    - esoTools.sha512Encode (str)
 
-esoTools.ripemd160Encode (str)
+    - esoTools.ripemd160Encode (str)
 
 
 esoTools.AES例:
@@ -110,14 +111,13 @@ webviewJsDelay：webview完成后延时执行js,默认1秒
 let resp = httpByte({url: "https://www.baidu.com/", webview: true,sourceRegex:'(?:\.m3u8|\.mp4|api\/source)'});
 print(resp.body);
 /* 
-webview目前问题：
-Android平台：
-开webviewPOST请求有点问题
-请求响应后没有添加响应头
-ios\macos平台:
-无
-Windows平台
-暂时不支持,等我修改webview插件
+- webview目前问题：
+    - Android平台：
+    - 请求响应后没有添加响应头
+- ios\macos平台:
+    - 无
+- Windows平台
+    - 暂时不支持,等我修改webview插件
 */
 ```
 
