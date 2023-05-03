@@ -1,5 +1,7 @@
 # 亦搜IOS版
 
+益达版不再维护,请移步新APP：https://github.com/xiaohucode/yidaRule
+
 安装包获取:https://github.com/xiaohucode/eso_source/releases
 
 规则导入链接:https://raw.githubusercontent.com/xiaohucode/eso_source/main/%E6%95%B4%E5%90%88%E8%A7%84%E5%88%99/EsoSource.es
